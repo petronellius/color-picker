@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface ColorPicker {
+        "color": string;
     }
 }
 declare global {
@@ -22,6 +23,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ColorPicker {
+        "color"?: string;
+        "onColorChanged"?: (event: CustomEvent<string>) => void;
     }
     interface IntrinsicElements {
         "color-picker": ColorPicker;
