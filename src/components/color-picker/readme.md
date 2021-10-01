@@ -7,11 +7,16 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property | Attribute | Description | Type     | Default                       |
+| -------- | --------- | ----------- | -------- | ----------------------------- |
+| `color`  | `color`   |             | `string` | `'hsla(180, 50%, 50%, 100%)'` |
+
+
+## Events
+
+| Event          | Description | Type                  |
+| -------------- | ----------- | --------------------- |
+| `colorChanged` |             | `CustomEvent<string>` |
 
 
 ----------------------------------------------
